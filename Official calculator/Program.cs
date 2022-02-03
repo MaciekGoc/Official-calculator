@@ -6,7 +6,7 @@ namespace Official_calculator
     {
         static void Main(string[] args)
         {
-            var calculator = new Calculator<double>();
+            var calculator = new Calculator<double>(); 
 
             Console.WriteLine("Welcome to my calculator!");
 
@@ -54,6 +54,7 @@ namespace Official_calculator
             }
             Console.WriteLine("Result of your operation is: " + result);
             Console.WriteLine("Press any key to close the window.");
+            Console.WriteLine("Goodbye!");
         }
     }
 }
