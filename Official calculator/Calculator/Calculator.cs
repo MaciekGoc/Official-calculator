@@ -9,21 +9,9 @@
             var isFloat = (example is float);
             var isDouble = (example is double);
 
-            if (isInt)
+            if (!isInt && !isFloat && !isDouble)
             {
-
-            }
-            else if (isFloat)
-            {
-
-            }
-            else if (isDouble)
-            {
-
-            }
-            else
-            {
-                System.Console.WriteLine("You have made a mistake. Start again.");
+                throw new Exception("You have made a mistake. Start again.");
             }
         }
 
